@@ -1,0 +1,51 @@
+# **Steps for adding XML Documentation Solution**
+
+Follow this step-by-step guide to integrate DoX module to your existing code repository.
+
+## Adding DoX module
+
+- Create a clone of your Cloud Manager&#39;s Git repository.
+- Copy the DoX module from this repository to root directory of the cloud manager code.
+- Update  **/dox/pom.xml**
+
+
+  - Replace the parent pom section with your parent&#39;s pom details, as shown below:
+
+ ![parentpom.png](assets/parentpom.png)
+
+  - Update the artifact Id as per your application&#39;s naming convention:
+
+![artifactid.png](assets/artifactid.png)
+
+- Update  **/dox/dox.installer/pom.xml**
+
+  - Update the artifact id as per your application&#39;s naming conventions.
+
+Add Maven repository related details for the XML Documentation solution package. This is shared in the welcome email.
+
+![doxproperties.png](assets/doxproperties.png)
+
+- Add the XML Documentation solution module in the parent pom module section.
+
+ ![modules.png](assets/modules.png)
+
+## [Optional] Overriding DoX OSGI Configurations
+
+This is an optional configuration, which is required only if you have existing OSGi configurations that you want to retain. In case you do not have any OSGi configurations to override, then you have an option of deleting the dox/dox.config.override folder.
+
+For more details on configuring OSGi, see [OSGi Configuration in the Repository](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html) in AEM&#39;s documentation
+
+- Add your OSGI properties overrides in the below files
+  - src/main/content/jcr\_root/apps/fmditaCustom/config/com.adobe.fmdita.config.ConfigManager.xml
+  - src/main/content/jcr\_root/apps/fmditaCustom/config/com.adobe.fmdita.xmleditor.config.XmlEditorConfig.xml
+- You can also add more properties with the relevant PID to override other XML Documentation solution specific OSGI properties
+- Commit the changes and run the Cloud Manager pipeline to deploy configuration changes.
+
+## [Optional] Enable Edit in Oxygen feature
+
+You can enable the Edit in Oxygen feature by adding the package details in the pom.xml file. In case you do not want to enable this feature, then you have an option of deleting the dox/dox.openinoxygen.installer folder.
+
+- Add dox.openinoxygen.installer module in /dox/pom.xml
+- Add the Edit in Oxygen package details. The package details are shared in the welcome email 
+
+![openinoxygenproperties.png](assets/openinoxygenproperties.png)
