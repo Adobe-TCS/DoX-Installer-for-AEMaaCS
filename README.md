@@ -20,8 +20,7 @@ Follow this step-by-step guide to integrate DoX module to your existing code rep
 - Update  **/dox/dox.installer/pom.xml**
 
   - Update the artifact id as per your application&#39;s naming conventions.
-
-Add Maven repository related details for the XML Documentation solution package. This is shared in the welcome email.
+  - Add AEM Maven repository credentials for the XML Documentation solution package. These are shared in the welcome email.
 
 ![doxproperties.png](assets/doxproperties.png)
 
@@ -46,6 +45,6 @@ For more details on configuring OSGi, see [OSGi Configuration in the Repository]
 You can enable the Edit in Oxygen feature by adding the package details in the pom.xml file. In case you do not want to enable this feature, then you have an option of deleting the dox/dox.openinoxygen.installer folder.
 
 - Add dox.openinoxygen.installer module in /dox/pom.xml
-- Add the Edit in Oxygen package details. The package details are shared in the welcome email 
+- Add AEM Maven repository credentials for the open-in-oxygen package. These are shared in the welcome email.
 
 ![openinoxygenproperties.png](assets/openinoxygenproperties.png)
