@@ -28,6 +28,15 @@ Follow this step-by-step guide to integrate DoX module to your existing code rep
 
  ![modules.png](assets/modules.png)
 
+## Upgradng DoX module
+
+- Create a clone of your Cloud Manager&#39;s Git repository.
+- Open /dox/dox.installer/pom.xml file
+- Change <dox.version> property to the latest version of the XML DoX solution.
+
+NOTE: You can refer to /dox/dox.installer/pom.xml file in this repository to get the latest value of <dox.version> property 
+
+
 ## [Optional] Overriding DoX OSGI Configurations
 
 This is an optional configuration, which is required only if you have existing OSGi configurations that you want to retain. In case you do not have any OSGi configurations to override, then you have an option of deleting the dox/dox.config.override folder.
@@ -48,3 +57,4 @@ You can enable the Edit in Oxygen feature by adding the package details in the p
 - Add AEM Maven repository credentials for the open-in-oxygen package. These are shared in the welcome email.
 
 ![openinoxygenproperties.png](assets/openinoxygenproperties.png)
+
