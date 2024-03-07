@@ -1,36 +1,6 @@
-> [!NOTE]  
-> Starting AEM Guides release 2024.2.0, this process has now been deprecated. For the correct process to install AEM Guides on AEM Cloud Service please refer this [link](https://experienceleague.adobe.com/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/deploy-xml-on-aemaacs.html?lang=en)
+# **Steps for adding AEM Guides on AEMaaCS**
 
-
-# **Steps for adding AEM Guides Solution**
-
-Follow this step-by-step guide to integrate Guides module to your existing code repository.
-
-## Adding Guides module
-
-- Create a clone of your Cloud Manager&#39;s Git repository.
-- Copy the "DoX" folder from this repository to root directory of the cloud manager code.
-- Update  **/dox/pom.xml**
-
-
-  - Replace the parent pom section with your parent&#39;s pom details, as shown below:
-
- ![parentpom.png](assets/parentpom.png)
-
-  - Update the artifact Id as per your application&#39;s naming convention:
-
-![artifactid.png](assets/artifactid.png)
-
-- Update  **/dox/dox.installer/pom.xml**
-
-  - Update the artifact id as per your application&#39;s naming conventions.
-  - Add AEM Maven repository credentials for the AEM Guides solution package. These are shared in the welcome email.
-
-![doxproperties.png](assets/doxproperties.png)
-
-- Add the AEM Guides solution module in the parent pom module section.
-
- ![modules.png](assets/modules.png)
+Follow this step-by-step guide to customise AEM Guides using your existing code repository.
 
 ## [Optional] Overriding Guides OSGI Configurations
 
@@ -52,3 +22,33 @@ You can enable the Edit in Oxygen feature by adding the package details in the p
 - Add AEM Maven repository credentials for the open-in-oxygen package. These are shared in the welcome email.
 
 ![openinoxygenproperties.png](assets/openinoxygenproperties.png)
+
+
+## [Deprecated] Adding Guides module
+
+> [!NOTE]  
+> Starting AEM Guides release 2024.2.0, this process has now been deprecated. For the correct process to install AEM Guides on AEM Cloud Service please refer this [link](https://experienceleague.adobe.com/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/deploy-xml-on-aemaacs.html?lang=en)
+
+- Create a clone of your Cloud Manager&#39;s Git repository.
+- Copy the "DoX" folder from this repository to root directory of the cloud manager code.
+- Update  **/dox/pom.xml**
+
+
+- Replace the parent pom section with your parent&#39;s pom details, as shown below:
+
+![parentpom.png](assets/parentpom.png)
+
+- Update the artifact Id as per your application&#39;s naming convention:
+
+![artifactid.png](assets/artifactid.png)
+
+- Update  **/dox/dox.installer/pom.xml**
+
+  - Update the artifact id as per your application&#39;s naming conventions.
+  - Add AEM Maven repository credentials for the AEM Guides solution package. These are shared in the welcome email.
+
+![doxproperties.png](assets/doxproperties.png)
+
+- Add the AEM Guides solution module in the parent pom module section.
+
+![modules.png](assets/modules.png)
