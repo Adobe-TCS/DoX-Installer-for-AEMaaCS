@@ -1,4 +1,4 @@
-# **Steps for adding AEM Guides Solution**
+# **Steps for adding AEM Guides on AEMaaCS**
 
 Follow this step-by-step guide to customise AEM Guides using your existing code repository.
 
