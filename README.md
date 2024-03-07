@@ -24,7 +24,7 @@ You can enable the Edit in Oxygen feature by adding the package details in the p
 ![openinoxygenproperties.png](assets/openinoxygenproperties.png)
 
 
-## Adding Guides module
+## [Deprecated] Adding Guides module
 
 > [!NOTE]  
 > Starting AEM Guides release 2024.2.0, this process has now been deprecated. For the correct process to install AEM Guides on AEM Cloud Service please refer this [link](https://experienceleague.adobe.com/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/deploy-xml-on-aemaacs.html?lang=en)
